@@ -217,6 +217,39 @@ var pickerDescribe = app.picker.create({
     ]
 });
 
+var pickerDescribe = app.picker.create({
+  inputEl: '#demo-picker-describe5',
+    rotateEffect: true,
+    
+
+    formatValue: function (values) {
+      return values[0] + ':' + values[1];
+    },
+    cols: [
+    // Hours
+    {
+      values: (function () {
+        var arr = [];
+        for (var i = 0; i <= 28; i++) { arr.push(i); }
+          return arr;
+      })(),
+    },
+    // Divider
+    {
+      divider: true,
+      content: ':'
+    },
+    // Minutes
+    {
+      values: (function () {
+        var arr = [];
+        for (var i = 0; i <= 59; i++) { arr.push(i < 10 ? '0' + i : i); }
+          return arr;
+      })(),
+    }
+    ]
+});
+
 // var today = new Date();
 var pickerInline = app.picker.create({
   containerEl: '#demo-picker-date-container',
