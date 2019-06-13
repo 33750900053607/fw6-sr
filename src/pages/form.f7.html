@@ -13,14 +13,16 @@
   </div>
   <div class="page-content">
     <div class="block-title">Form Example</div>
-    <div class="list no-hairlines-md">
+<!--    <div class="list no-hairlines-md">
+-->
+    <form class="list form-store-data" id="my-form2">
       <ul>
         <li>
           <div class="item-content item-input">
             <div class="item-inner">
               <div class="item-title item-label">Name</div>
               <div class="item-input-wrap">
-                <input type="text" placeholder="Your name"/>
+                <input type="text" name="name" placeholder="Your name"/>
               </div>
             </div>
           </div>
@@ -30,7 +32,7 @@
             <div class="item-inner">
               <div class="item-title item-label">E-mail</div>
               <div class="item-input-wrap">
-                <input type="email" placeholder="E-mail"/>
+                <input type="email" name="email" placeholder="E-mail"/>
               </div>
             </div>
           </div>
@@ -40,7 +42,7 @@
             <div class="item-inner">
               <div class="item-title item-label">URL</div>
               <div class="item-input-wrap">
-                <input type="url" placeholder="URL"/>
+                <input type="url" name="url" placeholder="URL"/>
               </div>
             </div>
           </div>
@@ -50,7 +52,7 @@
             <div class="item-inner">
               <div class="item-title item-label">Password</div>
               <div class="item-input-wrap">
-                <input type="password" placeholder="Password"/>
+                <input type="password" name="password" placeholder="Password"/>
               </div>
             </div>
           </div>
@@ -60,7 +62,7 @@
             <div class="item-inner">
               <div class="item-title item-label">Phone</div>
               <div class="item-input-wrap">
-                <input type="tel" placeholder="Phone"/>
+                <input type="tel" name="tel" placeholder="Phone"/>
               </div>
             </div>
           </div>
@@ -70,7 +72,7 @@
             <div class="item-inner">
               <div class="item-title item-label">Gender</div>
               <div class="item-input-wrap">
-                <select>
+                <select name="gender">
                   <option>Male</option>
                   <option>Female</option>
                 </select>
@@ -83,7 +85,7 @@
             <div class="item-inner">
               <div class="item-title item-label">Birth date</div>
               <div class="item-input-wrap">
-                <input type="date" placeholder="Birth day" value="2014-04-30"/>
+                <input type="date" name="birthday" placeholder="Birth day" value="2014-04-30"/>
               </div>
             </div>
           </div>
@@ -94,7 +96,7 @@
               <div class="item-title">Toggle</div>
               <div class="item-after">
                 <label class="toggle toggle-init">
-                  <input type="checkbox">
+                  <input type="checkbox" name="toggle">
                   <span class="toggle-icon"></span>
                 </label>
               </div>
@@ -107,7 +109,7 @@
               <div class="item-title item-label">Slider</div>
               <div class="item-input-wrap">
                 <div class="range-slider range-slider-init" data-label="true">
-                  <input type="range" value="50" min="0" max="100" step="1">
+                  <input type="range" name="slider" value="50" min="0" max="100" step="1">
                 </div>
               </div>
             </div>
@@ -118,7 +120,7 @@
             <div class="item-inner">
               <div class="item-title item-label">Textarea</div>
               <div class="item-input-wrap">
-                <textarea placeholder="Bio"></textarea>
+                <textarea name="textarea" placeholder="Bio"></textarea>
               </div>
             </div>
           </div>
@@ -128,13 +130,15 @@
             <div class="item-inner">
               <div class="item-title item-label">Resizable</div>
               <div class="item-input-wrap">
-                <textarea placeholder="Bio" class="resizable"></textarea>
+                <textarea name="resizable" placeholder="Bio" class="resizable"></textarea>
               </div>
             </div>
           </div>
         </li>
       </ul>
-    </div>
+    </form>
+<!--    </div>
+-->
     <div class="block-title">Buttons</div>
     <div class="block block-strong">
       <p class="row">
