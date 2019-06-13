@@ -115,10 +115,10 @@ var pickerDescribe = app.picker.create({
 var pickerDescribe = app.picker.create({
   inputEl: '#demo-picker-describe2',
     rotateEffect: true,
-    value: [
-      today.getHours(),
-      today.getMinutes() < 10 ? '0' + today.getMinutes() : today.getMinutes()
-    ],
+    // value: [
+    //  today.getHours(),
+    //  today.getMinutes() < 10 ? '0' + today.getMinutes() : today.getMinutes()
+    // ],
     formatValue: function (values) {
       return values[0] + ':' + values[1];
     },
@@ -150,10 +150,7 @@ var pickerDescribe = app.picker.create({
 var pickerDescribe = app.picker.create({
   inputEl: '#demo-picker-describe3',
     rotateEffect: true,
-    value: [
-      today.getHours(),
-      today.getMinutes() < 10 ? '0' + today.getMinutes() : today.getMinutes()
-    ],
+
     formatValue: function (values) {
       return values[0] + ':' + values[1];
     },
@@ -185,10 +182,7 @@ var pickerDescribe = app.picker.create({
 var pickerDescribe = app.picker.create({
   inputEl: '#demo-picker-describe4',
     rotateEffect: true,
-    value: [
-      today.getHours(),
-      today.getMinutes() < 10 ? '0' + today.getMinutes() : today.getMinutes()
-    ],
+
     formatValue: function (values) {
       return values[0] + ':' + values[1];
     },
